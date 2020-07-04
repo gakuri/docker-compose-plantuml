@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  plantumlserver:
+    image: plantuml/plantuml-server:jetty
+    restart: unless-stopped
+    ports:
+      - 192.168.11.103:80:8080
+
